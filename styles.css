@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("https://img.freepik.com/vetores-gratis/fundo-abstrato-gradiente-com-linhas-diagonais_23-2150594514.jpg?w=1380&t=st=1705252095~exp=1705252695~hmac=4c53706ae7da75d10b52dc71d08e0462ea74ce71dedfb67cfe74d4312abfb93d");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caixa-maior {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    border-radius: 25px;
+    padding: 30px;
+    width: 95%;
+    max-width: 400px;
+}
+
+.input-cidade {
+    border: none;
+    outline: none;    
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #ececec2b;
+    color: #ffff;
+    width: calc(100% - 50px);
+}
+
+.input-cidade::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    color:#ffffffd7;
+    padding-left: 15px;
+}
+
+.botao-busca {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: #ececec2b;
+    cursor: pointer;
+    float: right;
+
+}
+
+.img-busca {
+    width: 17px;
+    color: #ffff;
+}
+
+.caixa-media {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cidade {
+    align-items: center;
+    line-height: 23px;
+    color: #ffff;
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.img-previsao {
+    width: 50px;
+}
+
+.temp {
+    font-size: 43px;
+    color: #fff;
+    margin-top: 0px;
+    font-weight: 700;
+}
+
+.caixa-menor {
+    display: flex;
+    color: #fff;
+    align-items: center;
+
+}
+
+.texto-previsao {
+    text-transform: capitalize;
+    color:#fff;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.umidade {
+    color: #fff;
+    font-size: 17px;
+}
+
+.rodape {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff85;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+@media (max-width: 780px){
+    body {
+        padding: 30px
+    }
+
+    .input-cidade::placeholder {
+        padding-left: 5px;
+        font-size: 13px;
+        width: calc(100% - 0px);
+    }
+
+    .cidade {
+        text-align: center;
+        font-size: 22px;
+        line-height: 25px;
+    }
+    .temp {
+        font-size: 55px;
+    }
+}
